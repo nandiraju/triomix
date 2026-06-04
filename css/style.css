@@ -21,8 +21,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: var(--bg-primary);
-  background-image: var(--bg-glow);
+  background-color: transparent;
   color: var(--text-color);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   user-select: none;
@@ -39,6 +38,7 @@ html, body {
   z-index: -1;
   overflow: hidden;
   background-color: var(--bg-primary);
+  background-image: var(--bg-glow);
 }
 
 .bg-video {
