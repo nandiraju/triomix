@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Triomix | DNA, RNA, and Protein Bioinformatics by 1Cell.Ai</title>
+  <meta name="description" content="Triomix is an advanced bioinformatics platform owned by 1Cell.Ai. It delivers integrated multi-omic analysis of DNA, RNA, and proteins to accelerate scientific discoveries.">
+  <meta name="keywords" content="Triomix, 1Cell.Ai, bioinformatics, DNA, RNA, protein, genomics, molecular biology, study, analysis, database">
+  <meta name="author" content="1Cell.Ai">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://triomx.com/">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://triomx.com/">
+  <meta property="og:title" content="Triomix | DNA, RNA, and Protein Bioinformatics by 1Cell.Ai">
+  <meta property="og:description" content="Triomix is an advanced bioinformatics platform owned by 1Cell.Ai, enabling the integrated study of DNA, RNA, and proteins.">
+  <meta property="og:video" content="https://triomx.com/triomx.mp4">
+  <meta property="og:site_name" content="Triomix">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://triomx.com/">
+  <meta name="twitter:title" content="Triomix | DNA, RNA, and Protein Bioinformatics by 1Cell.Ai">
+  <meta name="twitter:description" content="Triomix is an advanced bioinformatics platform owned by 1Cell.Ai, enabling the integrated study of DNA, RNA, and proteins.">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Prevent favicon request 404 -->
+  <link rel="icon" href="data:,">
+
+  <!-- Schema.org JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Triomix",
+      "description": "An integrated multi-omic bioinformatics platform for studying DNA, RNA, and proteins.",
+      "brand": {
+        "@type": "Brand",
+        "name": "1Cell.Ai"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "1Cell.Ai",
+        "url": "https://1cell.ai"
+      },
+      "category": "Bioinformatics Software"
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Background Video Element -->
+  <div class="video-container">
+    <video 
+      id="bg-video" 
+      class="bg-video" 
+      autoplay 
+      loop 
+      muted 
+      playsinline 
+      role="none" 
+      aria-hidden="true"
+      width="1920" 
+      height="1080"
+    >
+      <source src="triomx.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Visually Hidden Accessible Text for SEO & Screen Readers -->
+  <header class="sr-only">
+    <nav>
+      <ul>
+        <li><a href="https://1cell.ai" target="_blank" rel="noopener noreferrer">1Cell.Ai Official Website</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="sr-only">
+    <h1>Triomix</h1>
+    <h2>Integrated DNA, RNA, and Protein Study for Bioinformatics</h2>
+    <section>
+      <p>
+        Triomix is a next-generation bioinformatics tool developed and owned by 1Cell.Ai. It delivers comprehensive analysis across genomics, transcriptomics, and proteomics, enabling researchers to study the critical flow of genetic information from DNA (transcription) to RNA (translation) to Proteins.
+      </p>
+      <p>
+        Accelerating biotechnology research, Triomix harnesses advanced biological computational models to provide structured, multi-dimensional profiles of cellular systems.
+      </p>
+    </section>
+  </main>
+
+  <footer class="sr-only">
+    <p>&copy; 2026 1Cell.Ai. All rights reserved.</p>
+  </footer>
+
+  <!-- Autoplay safety fallback -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const video = document.getElementById('bg-video');
+      
+      // Force video start to ensure it transitions to visible state
+      video.classList.add('loaded');
+      
+      // Fallback programatic play triggers if browsers block autoplay
+      const playVideo = () => {
+        video.play().catch(err => {
+          console.log('Autoplay request deferred: ', err);
+        });
+      };
+      
+      playVideo();
+      // Also try playing on first user interaction if blocked
+      window.addEventListener('click', playVideo, { once: true });
+      window.addEventListener('touchstart', playVideo, { once: true });
+    });
+  </script>
+</body>
+</html>
